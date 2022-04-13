@@ -263,17 +263,18 @@ section{
 .timeline
 {
 	position: relative;
-	width: 90%;
+	width: 75%;
 	/*border: 2px solid black;*/
 }
 
 .timeline-box{
 	position: relative;
+	padding: 5px;
 	width: 40%;
 	left: 5%;
 	min-height: 150px;
 	/*border: 2px solid black;*/
-	margin: 5px;
+	text-align: right;
 }
 
 .timeline-box:nth-child(2n){
@@ -282,33 +283,27 @@ section{
 
 /*/ to bring dots to center*/
 
-.timeline-box:nth-child(2n+1)::after	/* odd div me left se right lana hai */
-{
-	content: '';		/* content is must chahe do ya na do*/
-	border-radius: 50%; /* because we want round dots*/
-	width: 0.5rem;
-	right: -13%;		/* middle me lane ke leye plane ke*/
-	position: absolute;
-	top: 25%;
-	height: 0.5rem;
-	background-color: red;
-	z-index: 1;
-
+.timeline-box:nth-child(2n+1)::after
+{	
+	right: -13%;
 }
 
-.timeline-box:nth-child(2n)::after		/* even div me right se left lana hai */
+
+
+.timeline-box:nth-child(2n)::after		
 {
-	content: '';		/* content is must chahe do ya na do*/
-	border-radius: 50%; /* because we want round dots*/
-	width: 0.5rem;
-	left: -9%;		/* middle me lane ke leye plane ke*/
-	position: absolute;
-	top: 25%;
-	height: 0.5rem;
-	background-color: red;
-	z-index: 1;
+	left: -9%;		
+}
 
-
+.timeline-box::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    top: 25%;
+    border-radius: 50%;
+    z-index: 1;
 }
 
 /* border plane wla*/
