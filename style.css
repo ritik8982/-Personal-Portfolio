@@ -258,41 +258,18 @@ section{
 	height: inherit;
 }
 
-/* Education alternative box section  styling*/
-
-.timeline
-{
-	position: relative;
-	width: 75%;
-	/*border: 2px solid black;*/
+.timeline{
+    position: relative;
+    width: 75%;
 }
 
 .timeline-box{
-	position: relative;
-	padding: 5px;
-	width: 40%;
-	left: 5%;
-	min-height: 150px;
-	/*border: 2px solid black;*/
-	text-align: right;
-}
-
-.timeline-box:nth-child(2n){
-	left: 53%;
-}
-
-/*/ to bring dots to center*/
-
-.timeline-box:nth-child(2n+1)::after
-{	
-	right: -13%;
-}
-
-
-
-.timeline-box:nth-child(2n)::after		
-{
-	left: -9%;		
+    position: relative;
+    padding: 5px;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    text-align: right;
 }
 
 .timeline-box::after {
@@ -300,67 +277,82 @@ section{
     position: absolute;
     width: 15px;
     height: 15px;
-    background-color: red;
+    background-color: lightgrey;
     top: 25%;
     border-radius: 50%;
     z-index: 1;
 }
 
-/* border plane wla*/
-.timeline-divider{
-	position: absolute;
-	height: 75%;
-	width: 0;
-	border: 3px dashed #0096fa6b;
-	top: 10%;
-	left: 50%;
+.timeline-box:nth-child(2n){
+    left: 53%;
 }
 
-/* plane*/
-.timeline-traveller{
-	position: sticky;
-	top: 30%;
-	transform: rotate(90deg);
-	z-index: 2;
+.timeline-box:nth-child(2n+1)::after{
+    right: -11.8%;
 }
 
-/*education content styling*/
-
-.timeline-logo{
-	position: absolute;
-	width: 100px;
-	overflow: hidden;
+.timeline-box:nth-child(2n)::after{
+    left: -9%;
 }
 
-.cls-font{
-	font-size: 1.4rem;
+.timeline-container {
+    padding: 8px;
 }
 
-.school{
-	margin: 5px 0 0;
+
+
+.timeline-logo {
+    position: absolute;
+    width: 80px;
+    overflow: hidden;
+}
+
+.timeline-logo > img {
+    width: 100%;
+    border-radius: 10%;
+}
+
+#timeline-divider{
+    position: absolute;
+    height: 66%;
+    width: 0;
+    border: 1px dashed #0096fa6b;
+    top: 10%;
+    left: 50%;
+    color: #433E3F;
+}
+
+#timeline-divider .timeline-traveller {
+    position: sticky;
+    top: 135px;
+}
+
+#timeline-divider i {
+    transform: rotate(90deg);
+    margin-top: -35px;
+    display: block;
+    color: #2857a4;
+}
+
+.standard  {
+    font-size: 1.4rem;
+}
+
+.institute-name {
+    margin: 5px 0 0;
     color: #eb822d;
     font-weight: 400;
     font-size: 1.2rem;
 }
-h4 {
-    display: block;
-    font-weight: bold;
-    text-align: right;
-    padding-right: 10px;
-   /* margin-top: 10px;*/
+
+.study-duration {
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
+    font-size: 1rem;
 }
 
-h3 {
-    display: block;
-    font-size: 1.17em;
-    text-align: right;
-    font-weight: bold;
-     padding-right: 10px;
-     margin-bottom: 0px;
-
-}
-
-.school-description {
+.study-description {
     font-size: 14px;
     padding: 2px;
     color: grey;
@@ -371,27 +363,16 @@ h3 {
     text-align: justify;
 }
 
-.duration
-{
-	    color: #9e9b9b;
-    font-weight: 100;
-    color: grey;
+.text-1rem{
     font-size: 1rem;
 }
 
-h5{
-	display: block;
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: right;
-   margin-top: 0px;
-
+.m0 {
+    margin: 0;
 }
-
-.text-align-center{
-	text-align: center;
+.mb-blue{
+    background-color: blue;
 }
-
 
 /* contact styling*/
 
